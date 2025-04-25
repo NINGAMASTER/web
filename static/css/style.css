@@ -142,13 +142,6 @@
             transform: translateX(-110%);
   }
 }
-@media (max-width: 768px) {
-  .header .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .logo-under {
     position: relative;
     left: 22%;
@@ -639,3 +632,10 @@ a {
   border-top: 1px solid #9b9b9b;
   color: #9b9b9b;
 }
+@media (max-width: 768px) {
+  .header .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
