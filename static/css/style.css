@@ -142,76 +142,6 @@
             transform: translateX(-110%);
   }
 }
-  .logo-under {
-    position: relative;
-    left: 22%;
-  }
-  .menu {
-    margin-top: 20px;
-  }
-  .menu .btn {
-    position: relative;
-    left: 26%;
-  }
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .features-grid,
-  .services-grid {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .reviews {
-    padding: 40px 0;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-  .reviews .wrapper {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-animation: none;
-            animation: none;
-    margin-left: 0;
-    padding: 0 20px;
-    gap: 20px;
-    -webkit-animation: 10s slide linear infinite;
-            animation: 10s slide linear infinite;
-  }
-  .reviews .wrapper .review {
-    max-width: 400px;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-  }
-  .waste-disposal .section-title {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.75rem;
-  }
-  .waste-disposal .intro-text {
-    margin-bottom: 2rem;
-    padding: 0;
-  }
-  .waste-disposal .subtitle {
-    font-size: 1.5rem;
-    margin: 2rem 0 1rem 1rem;
-  }
-  .waste-disposal .subtitle::before {
-    left: -1rem;
-    height: calc(100% - 0.75rem);
-  }
-  .waste-disposal .waste-categories {
-    gap: 1.5rem;
-    margin: 1.5rem 0;
-  }
-  .waste-disposal .recycling-benefits {
-    margin: 2rem 0;
-    grid-template-columns: 1fr;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -639,3 +569,74 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+
+  .logo-under {
+    position: relative;
+    left: 22%;
+  }
+  .menu {
+    margin-top: 20px;
+  }
+  .menu .btn {
+    position: relative;
+    left: 26%;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .features-grid,
+  .services-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reviews {
+    padding: 40px 0;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .reviews .wrapper {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-animation: none;
+            animation: none;
+    margin-left: 0;
+    padding: 0 20px;
+    gap: 20px;
+    -webkit-animation: 10s slide linear infinite;
+            animation: 10s slide linear infinite;
+  }
+  .reviews .wrapper .review {
+    max-width: 400px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+  .waste-disposal .section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+  }
+  .waste-disposal .intro-text {
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+  .waste-disposal .subtitle {
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem 1rem;
+  }
+  .waste-disposal .subtitle::before {
+    left: -1rem;
+    height: calc(100% - 0.75rem);
+  }
+  .waste-disposal .waste-categories {
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  .waste-disposal .recycling-benefits {
+    margin: 2rem 0;
+    grid-template-columns: 1fr;
+  }
+}
