@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EcoSurgut</title>
+		<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="/static/css/chatassistent.css"
+		/>
+		<link rel="stylesheet" href="/static/css/map.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="https://img.freepik.com/free-vector/isolated-tree-white-background_1308-26130.jpg?semt=ais_hybrid&w=740"
+		/>
+	</head>
+	<body>
+		<!-- Шапка -->
+		<header class="header">
+			<div class="container">
+				<div class="logo-container">
+					<h1 class="logo"><a href="/">EcoSurgut</a></h1>
+					<div class="logo-under">Recycle Today for a Better Tomorrow</div>
+				</div>
+				<nav class="menu">
+					<a class="menu__item" href="#services">Услуги</a>
+					<a class="menu__item" href="#about">О нас</a>
+					<a class="menu__item" href="#news">Re-Новости</a>
+					<a class="menu__item" href="#contacts">Контакты</a>
+					<a class="menu__item btn" href="#order">Подробнее</a>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Герой-блок -->
+		<section class="hero">
+			<div class="container">
+				<h1>Вторая жизнь городских отходов</h1>
+				<p>
+					Сортировка, переработка и повторное использование – для экологичного
+					будущего вашего города
+				</p>
+				<a href="#order" class="btn btn-large">Оставить заявку</a>
+			</div>
+		</section>
+
+		<!-- Преимущества -->
+		<section class="features" id="about">
+			<div class="container">
+				<h2>Почему выбирают нас?</h2>
+				<div class="features-grid">
+					<div class="feature">
+						<i class="fas fa-solid fa-clock"></i>
+						<h3>Удобный сервис</h3>
+						<p>Помогаем быстро найти нужное решение</p>
+					</div>
+					<div class="feature">
+						<i class="fas fa-solid fa-person"></i>
+						<h3>Клиентоориентированность</h3>
+						<p>Помогаем сделать оптимальный выбор</p>
+					</div>
+					<div class="feature">
+						<i class="fas fa-solid fa-check"></i>
+						<h3>Доверие и прозрачность</h3>
+						<p>Отзывы, рейтинги и честные условия от каждой компании</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="map">
+			<div class="container">
+				<div class="wrapper-map">
+					<div class="map-container">
+						<script
+							type="text/javascript"
+							charset="utf-8"
+							async
+							src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A58dfa95204ddc6ec8c305cfe02c55f4c810a6a41d12d42bd8b03b9550f7acda3&amp;width=700&amp;height=700&amp;lang=ru_RU&amp;scroll=true"
+						></script>
+					</div>
+					<div class="name-container">
+						<div class="one block" onclick="toggleInfo(this)">
+							<div class="title">ПР.НАБЕРЕЖНЫЙ 5 СТР.2</div>
+							<div class="info-content">
+								<div>
+									<p>ВТ.,ЧТ.,ПТ. 14:00-19:00</p>
+									<p>СБ.,ВС. 11:00-16:00</p>
+									<p>ПН.,СР. ВЫХОДНЫЕ</p>
+								</div>
+								<p class="map-number">Телефон: +7 922 420 03 27</p>
+							</div>
+						</div>
+
+						<div class="two block" onclick="toggleInfo(this)">
+							<h2>УЛ. ФАРМАНА САЛМАНОВА Д.2</h2>
+							<div class="info-content">
+								<div>
+									<p>ВТ.,ЧТ.,ПТ. 14:00-19:00</p>
+									<p>СБ.,ВС. 11:00-16:00</p>
+									<p>ПН.,СР. ВЫХОДНЫЕ</p>
+								</div>
+								<p class="map-number">Телефон: +7 922 420 54 72</p>
+							</div>
+						</div>
+
+						<div class="three block" onclick="toggleInfo(this)">
+							<h2>УЛ. 30 ЛЕТ ПОБЕДЫ 21/3</h2>
+							<div class="info-content">
+								<div>
+									<p>СР.,ЧТ. 14:00-19:00</p>
+									<p>СБ.,ВС. 11:00-15:00</p>
+									<p>ПН.,ВТ.,ПТ. ВЫХОДНЫЕ</p>
+								</div>
+								<p class="map-number">Телефон: +7 922 420 45 37</p>
+							</div>
+						</div>
+
+						<div class="four block" onclick="toggleInfo(this)">
+							<h2>УЛ. АЛЕКСАНДРА УСОЛЬЦЕВА Д.16</h2>
+							<div class="info-content">
+								<div>
+									<p>ВТ.,ЧТ.,ПТ. 14:00-19:00</p>
+									<p>СБ.,ВС. 11:00-15:00</p>
+									<p>ПН.,СР. ВЫХОДНЫЕ</p>
+								</div>
+								<p class="map-number">Телефон: +7 932 248 45 52</p>
+							</div>
+						</div>
+
+						<div class="five block" onclick="toggleInfo(this)">
+							<h2>П. БЕЛЫЙ ЯР, УЛ. МАЯКОВСКОГО СТР. 3А</h2>
+							<div class="info-content">
+								<div>
+									<p>ВТ.,ЧТ.,ПТ. 14:00-19:00</p>
+									<p>СБ.,ВС. 11:00-15:00</p>
+									<p>ПН.,СР. ВЫХОДНЫЕ</p>
+								</div>
+								<p class="map-number">Телефон: +7 922 407 22 94</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Услуги -->
+		<section class="services" id="services">
+			<div class="container">
+				<h2>Наши услуги</h2>
+				<div class="services-grid">
+					<div class="service">
+						<div class="img-placeholder">
+							<i class="fa-solid fa-recycle"></i>
+						</div>
+						<h3>Утилизация отходов</h3>
+						<p>Промышленные отходы, отходы производств</p>
+						<a href="/static/pages/recycling.html" class="btn">Подробнее</a>
+					</div>
+					<div class="service">
+						<div class="img-placeholder">
+							<i class="fa-regular fa-circle-xmark"></i>
+						</div>
+						<h3>Обезвреживание отходов</h3>
+						<p>Обезвреживание отходов III - V класса опасности</p>
+						<a href="/static/pages/defeat.html" class="btn">Подробнее</a>
+					</div>
+					<div class="service">
+						<div class="img-placeholder">
+							<i class="fa-solid fa-truck"></i>
+						</div>
+						<h3>Транспортирование отходов</h3>
+						<p>
+							Вывоз отходов производства и потребления на собственный полигон
+						</p>
+						<a href="/static/pages/transport.html" class="btn">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Новости -->
+		<section class="news" id="news">
+			<div class="container">
+				<h2>Re-Новости</h2>
+				<div class="news-grid" id="news-container">
+					<!-- Новости будут загружены здесь через JavaScript -->
+				</div>
+			</div>
+		</section>
+
+		<!-- Отзывы -->
+		<section class="reviews">
+			<div class="container">
+				<h2>Отзывы клиентов</h2>
+				<div class="wrapper">
+					<div class="review">
+						<div class="photo-client">
+							<img src="/static/assets/img/thanos.webp" alt="Фото клиента" />
+						</div>
+						<!-- <div class="wrapper-for-text"> -->
+						<p>
+							"Понравилось, что есть советы по экологичному образу жизни. Можно
+							найти что-то новое для себя. Ставлю 42 пятёрки."
+						</p>
+						<!-- </div> -->
+						<div class="stars">★★★★★</div>
+						<h4>Александр Таносович</h4>
+					</div>
+					<div class="review">
+						<div class="photo-client">
+							<img src="/static/assets/img/ashton.webp" alt="Фото клиента" />
+						</div>
+						<p>
+							"Полезный сайт, особенно раздел про раздельный сбор мусора. Время
+							от времени добавляют что-то интересное."
+						</p>
+						<div class="stars">★★★★★</div>
+						<h4>Эльдар Джар</h4>
+					</div>
+					<div class="review">
+						<div class="photo-client">
+							<img
+								src="/static/assets/img/breakingbreak.webp"
+								alt="Фото клиента"
+							/>
+						</div>
+						<p>
+							"Читаю иногда, когда нужно узнать что-то про экологию. Информация
+							подана понятно, без лишней воды."
+						</p>
+						<div class="stars">★★★★★</div>
+						<h4>Уолтер Лайт</h4>
+					</div>
+					<div class="review">
+						<div class="photo-client">
+							<img src="/static/assets/img/human3.webp" alt="Фото клиента" />
+						</div>
+						<p>"Отличная работа! Всё работает идеально."</p>
+						<div class="stars">★★★★★</div>
+						<h4>Иван Петров</h4>
+					</div>
+					<div class="review">
+						<div class="photo-client">
+							<img src="/static/assets/img/spider.webp" alt="Фото клиента" />
+						</div>
+						<p>
+							"Простой и понятный ресурс. Нравится, что нет навязчивой рекламы,
+							можно спокойно почитать."
+						</p>
+						<div class="stars">★★★★★</div>
+						<h4>Дружелюбный сосед</h4>
+					</div>
+					<div class="review">
+						<div class="photo-client">
+							<img src="/static/assets/img/human1.webp" alt="Фото клиента" />
+						</div>
+						<p>
+							"Хороший ресурс, много статей про экологию. Дизайн простой, но
+							удобный."
+						</p>
+						<div class="stars">★★★★★</div>
+						<h4>Мистер Бизнес</h4>
+					</div>
+					<div class="review">
+						<div class="photo-client">
+							<img src="/static/assets/img/nik.webp" alt="Фото клиента" />
+						</div>
+						<p>
+							"Полезный сайт, особенно раздел про раздельный сбор мусора. Время
+							от времени добавляют что-то интересное."
+						</p>
+						<div class="stars">★★★★★</div>
+						<h4>Никола</h4>
+					</div>
+				</div>
+				<div class="wrapper">
+					<div class="review">
+						<div class="photo-client">
+							<img src="/static/assets/img/thanos.webp" alt="Фото клиента" />
+						</div>
+						<p>
+							"Понравилось, что есть советы по экологичному образу жизни. Можно
+							найти что-то новое для себя. Ставлю 42 пятёрки."
+						</p>
+						<div class="stars">★★★★★</div>
+						<h4>Александр Таносович</h4>
+					</div>
+					<div class="review">
+						<div class="photo-client">
+							<img src="/static/assets/img/ashton.webp" alt="Фото клиента" />
+						</div>
+						<p>
+							"Полезный сайт, особенно раздел про раздельный сбор мусора. Время
+							от времени добавляют что-то интересное."
+						</p>
+						<div class="stars">★★★★★</div>
+						<h4>Эльдар Джар</h4>
+					</div>
+
+					<div class="review">
+						<div class="photo-client">
+							<img
+								src="/static/assets/img/breakingbreak.webp"
+								alt="Фото клиента"
+							/>
+						</div>
+						<p>
+							"Читаю иногда, когда нужно узнать что-то про экологию. Информация
+							подана понятно, без лишней воды."
+						</p>
+						<div class="stars">★★★★★</div>
+						<h4>Уолтер Лайт</h4>
+					</div>
+					<div class="review">
+						<div class="photo-client">
+							<img src="/static/assets/img/human3.webp" alt="Фото клиента" />
+						</div>
+						<p>"Отличная работа! Всё работает идеально."</p>
+						<div class="stars">★★★★★</div>
+						<h4>Иван Петров</h4>
+					</div>
+					<div class="review">
+						<div class="photo-client">
+							<img src="/static/assets/img/spider.webp" alt="Фото клиента" />
+						</div>
+						<p>
+							"Простой и понятный ресурс. Нравится, что нет навязчивой рекламы,
+							можно спокойно почитать."
+						</p>
+						<div class="stars">★★★★★</div>
+						<h4>Дружелюбный сосед</h4>
+					</div>
+					<div class="review">
+						<div class="photo-client">
+							<img src="/static/assets/img/human1.webp" alt="Фото клиента" />
+						</div>
+						<p>
+							"Хороший ресурс, много статей про экологию. Дизайн простой, но
+							удобный."
+						</p>
+						<div class="stars">★★★★★</div>
+						<h4>Мистер Бизнес</h4>
+					</div>
+					<div class="review">
+						<div class="photo-client">
+							<img src="/static/assets/img/nik.webp" alt="Фото клиента" />
+						</div>
+						<p>
+							"Полезный сайт, особенно раздел про раздельный сбор мусора. Время
+							от времени добавляют что-то интересное."
+						</p>
+						<div class="stars">★★★★★</div>
+						<h4>Никола</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Форма обратной связи -->
+		<section class="contact" id="order">
+			<div class="container">
+				<h2>Оставьте заявку</h2>
+				<p>
+					Предлагаем всем желающим стать волонтерами! Для этого напишите в
+					заявке: "Хочу в волонтеры!"
+				</p>
+				<form>
+					<input type="text" placeholder="Ваше имя" required />
+					<input type="email" placeholder="Email" required />
+					<input type="tel" placeholder="Телефон" />
+					<textarea placeholder="Ваше сообщение"></textarea>
+					<button type="submit" class="btn btn-large">Отправить</button>
+				</form>
+			</div>
+		</section>
+
+		<!-- Подвал -->
+		<footer class="footer" id="contacts">
+			<div class="container">
+				<div class="footer-info">
+					<div class="logo">EcoSurgut</div>
+					<p>Переработка мусора сегодня - приведет нас к чистому завтра</p>
+				</div>
+				<div class="footer-links">
+					<a href="#services">Услуги</a>
+					<a href="#news">Re-Новости</a>
+					<a href="#contacts">Контакты</a>
+				</div>
+				<div class="footer-social">
+					<a href="#"><i class="fa-brands fa-playstation"></i></a>
+					<a href="#"><i class="fab fa-telegram"></i></a>
+					<a href="#"><i class="fa-brands fa-weixin"></i></a>
+					<a href="#"><i class="fa-brands fa-steam"></i></a>
+					<a href="#"><i class="fa-brands fa-sticker-mule"></i></a>
+					<a href="#"><i class="fa-brands fa-btc"></i></a>
+				</div>
+			</div>
+			<div class="copyright">
+				© 2025 EcoSurgut. Все права защищены моим словом.
+			</div>
+		</footer>
+
+		<!-- чат ассистент -->
+
+		<div class="chat-container">
+			<div class="chat-header">
+				<h3>Ассистент</h3>
+				<button class="chat-close"><i class="fas fa-times"></i></button>
+			</div>
+			<div class="chat-messages">
+				<div class="message bot-message">
+					<p>Привет! Я ваш виртуальный помощник. Чем могу помочь?</p>
+				</div>
+			</div>
+			<div class="chat-input">
+				<input type="text" placeholder="Введите сообщение..." />
+				<button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+			</div>
+		</div>
+		<button class="chat-toggle">
+			<i class="fas fa-comment-dots"></i>
+		</button>
+
+		<script src="/static/js/chat.js"></script>
+		<script src="/static/js/maplist.js"></script>
+		<script src="/static/js/news.js"></script>
+	</body>
+</html>

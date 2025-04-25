@@ -1,0 +1,64 @@
+@keyframes scale-up {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.1);
+	}
+}
+
+@keyframes scale-down {
+	from {
+		transform: scale(1.1);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+@keyframes up {
+	from {
+		transform: translateY(0%);
+	}
+	to {
+		transform: translateY(-10%);
+		background-color: $AccentColor;
+	}
+}
+
+@keyframes down {
+	from {
+		transform: translateY(-10%);
+	}
+	to {
+		transform: translateY(0%);
+		background-color: #ffffff;
+	}
+}
+
+@keyframes upS {
+	from {
+		transform: translateY(0%);
+	}
+	to {
+		transform: translateY(-10%);
+	}
+}
+
+@keyframes downS {
+	from {
+		transform: translateY(-10%);
+	}
+	to {
+		transform: translateY(0%);
+	}
+}
+
+@keyframes slide {
+	from {
+		transform: translateX(-10%);
+	}
+	to {
+		transform: translateX(-110%);
+	}
+}

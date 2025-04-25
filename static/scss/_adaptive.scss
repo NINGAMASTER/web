@@ -1,0 +1,82 @@
+@media (max-width: 768px) {
+	.header .container {
+		flex-direction: column;
+	}
+
+	.logo-under {
+		position: relative;
+		left: 22%;
+	}
+
+	.menu {
+		margin-top: 20px;
+
+		.btn {
+			position: relative;
+			// margin: 0 0 0 300px;
+			left: 26%;
+		}
+	}
+
+	.hero h1 {
+		font-size: 2rem;
+	}
+
+	.features-grid,
+	.services-grid {
+		flex-direction: column;
+	}
+
+	.reviews {
+		padding: 40px 0;
+		overflow-x: auto;
+		white-space: nowrap;
+
+		.wrapper {
+			display: inline-flex;
+			animation: none;
+			margin-left: 0;
+			padding: 0 20px;
+			gap: 20px;
+			animation: 10s slide linear infinite;
+
+			.review {
+				max-width: 400px;
+				flex: 0 0 auto;
+			}
+		}
+	}
+
+	.waste-disposal {
+		.section-title {
+			font-size: 2rem;
+			margin-bottom: $space-lg;
+			padding-bottom: $space-sm;
+		}
+
+		.intro-text {
+			margin-bottom: $space-xl;
+			padding: 0;
+		}
+
+		.subtitle {
+			font-size: 1.5rem;
+			margin: $space-xl 0 $space-md $space-md;
+
+			&::before {
+				left: -$space-md;
+				height: calc(100% - #{$space-sm});
+			}
+		}
+
+		.waste-categories {
+			gap: $space-lg;
+			margin: $space-lg 0;
+		}
+
+		.recycling-benefits {
+			margin: $space-xl 0;
+			grid-template-columns: 1fr;
+		}
+	}
+}

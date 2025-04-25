@@ -1,0 +1,161 @@
+@import "_mixins.scss";
+@import "_var.scss";
+
+.waste-disposal {
+	font-family: "Inter", system-ui, sans-serif;
+	line-height: 1.6;
+	color: $text-color;
+	background-color: $light-bg;
+	@include spacing-section;
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 $space-lg;
+	}
+
+	//Заголовки
+	.section-title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: #000000;
+		margin: 0 auto $space-xl;
+		text-align: center;
+		position: relative;
+		max-width: 800px;
+		padding-bottom: $space-md;
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 80px;
+			height: 4px;
+			background: $primary-color;
+			border-radius: 2px;
+		}
+	}
+
+	.intro-text {
+		font-size: 1.125rem;
+		color: #000000;
+		max-width: 800px;
+		margin: 0 auto $space-xxl;
+		text-align: center;
+		line-height: 1.8;
+		padding: 0 $space-md;
+	}
+
+	.subtitle {
+		font-size: 1.75rem;
+		font-weight: 600;
+		color: #000000;
+		margin: $space-xxl 0 $space-lg $space-lg;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: -$space-lg;
+			top: $space-sm;
+			height: calc(100% - #{$space-md});
+			width: 6px;
+			background: $primary-color;
+			border-radius: 3px;
+		}
+	}
+
+	// Категории отходов
+	.waste-categories {
+		display: flex;
+		flex-direction: column;
+		gap: $space-xl;
+		margin: $space-xl 0;
+	}
+
+	.waste-category {
+		@include card-spacing;
+		background: $light-text;
+		border-radius: 12px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+		.category-title {
+			font-size: 1.25rem;
+			font-weight: 600;
+			color: $primary-dark;
+			margin-bottom: $space-md;
+			display: flex;
+			align-items: center;
+			gap: $space-sm;
+			padding-left: $space-sm;
+
+			&::before {
+				content: "•";
+				color: $primary-color;
+				font-size: 1.5rem;
+			}
+		}
+
+		.waste-list {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			gap: $space-sm;
+
+			.waste-item {
+				display: flex;
+				align-items: flex-start;
+				gap: $space-sm;
+				padding: $space-sm $space-md;
+				background: rgba(#000000, 0.08);
+				border-radius: 8px;
+				border-left: 3px solid $primary-color;
+
+				.icon {
+					color: $primary-color;
+					font-size: 1.25rem;
+					margin-top: $space-xxs;
+					flex-shrink: 0;
+				}
+
+				.text {
+					flex: 1;
+					padding: $space-xxs 0;
+				}
+			}
+		}
+	}
+
+	// Преимущества переработки
+	.recycling-benefits {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: $space-lg;
+		margin: $space-xxl 0;
+
+		.benefit-card {
+			@include card-spacing;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			border-top: 4px solid $primary-color;
+			transition: all 0.3s ease;
+
+			.benefit-icon {
+				font-size: 2.5rem;
+				color: $primary-color;
+				margin-bottom: $space-sm;
+			}
+
+			.benefit-text {
+				font-size: 1rem;
+				color: #000000;
+				margin-top: $space-xs;
+			}
+		}
+	}
+}

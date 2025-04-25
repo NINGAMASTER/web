@@ -1,0 +1,42 @@
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin card-style {
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.222);
+}
+
+$space-unit: 1rem;
+$space-xxs: $space-unit * 0.25; // 4px
+$space-xs: $space-unit * 0.5; // 8px
+$space-sm: $space-unit * 0.75; // 12px
+$space-md: $space-unit * 1; // 16px
+$space-lg: $space-unit * 1.5; // 24px
+$space-xl: $space-unit * 2; // 32px
+$space-xxl: $space-unit * 3; // 48px
+$space-xxxl: $space-unit * 4; // 64px
+
+// ===== Миксины =====
+@mixin spacing-section {
+	padding-top: $space-xxl;
+	padding-bottom: $space-xxl;
+
+	@media (max-width: 768px) {
+		padding-top: $space-xl;
+		padding-bottom: $space-xl;
+	}
+}
+
+@mixin card-spacing {
+	padding: $space-lg;
+	margin-bottom: $space-lg;
+
+	@media (max-width: 768px) {
+		padding: $space-md;
+		margin-bottom: $space-md;
+	}
+}

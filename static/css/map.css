@@ -1,0 +1,116 @@
+.map {
+	padding: 50px 0;
+	background: #f8f8f8;
+}
+
+.map .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.map .wrapper-map {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	align-items: flex-start;
+}
+
+.map-container {
+	flex: 1 1 600px;
+	min-width: 300px;
+	height: 700px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.name-container {
+	flex: 1 1 400px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.block {
+	background: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.block:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.block h2,
+.block .title {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 600;
+	color: #333;
+	position: relative;
+	padding-right: 25px;
+}
+
+.block h2::after,
+.block .title::after {
+	content: "+";
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 20px;
+	color: #666;
+	transition: transform 0.3s ease;
+}
+
+.block.active h2::after,
+.block.active .title::after {
+	content: "-";
+}
+
+.info-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease;
+	padding-top: 0;
+}
+
+.block.active .info-content {
+	max-height: 200px;
+	padding-top: 15px;
+}
+
+.info-content p {
+	margin: 8px 0;
+	font-size: 15px;
+	color: #555;
+	line-height: 1.4;
+}
+
+.map-number {
+	font-weight: 600;
+	color: #2a5885 !important;
+	margin-top: 12px !important;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+	.wrapper-map {
+		flex-direction: column;
+	}
+
+	.map-container {
+		height: 400px;
+		width: 100%;
+	}
+
+	.block h2,
+	.block .title {
+		font-size: 16px;
+	}
+}
